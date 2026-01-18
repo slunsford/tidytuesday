@@ -8,11 +8,9 @@ layout: base.njk
       <time datetime="{{ date | htmlDateString }}">{{ date | readableDate }}</time>
     </p>
     <h1 class="post__title">{{ title }}</h1>
-    {% if tidytuesday_url %}
     <p class="post__source">
-      <a href="{{ tidytuesday_url }}">View data on TidyTuesday</a>
+      <a href="{{ site.tidytuesday_base }}/{{ date | year }}/{{ date | htmlDateString }}">View data on TidyTuesday</a>
     </p>
-    {% endif %}
   </header>
 
   <div class="post__content">

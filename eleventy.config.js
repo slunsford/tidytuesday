@@ -24,6 +24,10 @@ export default function(eleventyConfig) {
     return DateTime.fromJSDate(dateObj, { zone: "utc" }).toISO();
   });
 
+  eleventyConfig.addFilter("year", (dateObj) => {
+    return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yyyy");
+  });
+
   // Shortcodes
   eleventyConfig.addShortcode("currentYear", () => `${new Date().getFullYear()}`);
 
