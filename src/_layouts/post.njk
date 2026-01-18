@@ -1,0 +1,21 @@
+---
+layout: base.njk
+---
+<article class="post">
+  <header class="post__header">
+    <p class="post__meta">
+      <span class="post__week">Week {{ week }}</span>
+      <time datetime="{{ date | htmlDateString }}">{{ date | readableDate }}</time>
+    </p>
+    <h1 class="post__title">{{ title }}</h1>
+    {% if tidytuesday_url %}
+    <p class="post__source">
+      <a href="{{ tidytuesday_url }}">View data on TidyTuesday</a>
+    </p>
+    {% endif %}
+  </header>
+
+  <div class="post__content">
+    {{ content | safe }}
+  </div>
+</article>

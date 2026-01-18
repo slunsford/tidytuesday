@@ -1,0 +1,11 @@
+<ul class="post-list">
+  {%- for post in posts | reverse -%}
+  <li class="post-list__item">
+    <a href="{{ post.url }}" class="post-list__link">
+      <span class="post-list__week">Week {{ post.data.week }}</span>
+      <span class="post-list__title">{{ post.data.title }}</span>
+      <time class="post-list__date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+    </a>
+  </li>
+  {%- endfor -%}
+</ul>

@@ -1,0 +1,5 @@
+title: TidyTuesday
+description: Data visualizations from the R4DS TidyTuesday weekly data project
+author: Sean Lunsford
+repo: https://github.com/slunsford/tidytuesday
+tidytuesday_base: https://github.com/rfordatascience/tidytuesday/blob/main/data/2026

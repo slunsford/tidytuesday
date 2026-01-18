@@ -1,0 +1,41 @@
+---
+layout: base.njk
+title: Home
+---
+<div class="home">
+  <section class="home__intro">
+    <h1>{{ site.title }}</h1>
+    <p>{{ site.description }}</p>
+  </section>
+
+  <section class="home__posts">
+    <h2>Posts</h2>
+    {% set posts = collections.posts %}
+    {% include "post-list.njk" %}
+  </section>
+</div>
+
+<style>
+.home {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--space-xl) var(--space-lg);
+}
+
+.home__intro {
+  margin-bottom: var(--space-xl);
+}
+
+.home__intro h1 {
+  margin-bottom: var(--space-sm);
+}
+
+.home__intro p {
+  color: var(--color-text-muted);
+  font-size: 1.125rem;
+}
+
+.home__posts h2 {
+  margin-bottom: var(--space-md);
+}
+</style>
