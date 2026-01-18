@@ -11,9 +11,11 @@
   <header class="site-header">
     <div class="site-header__inner">
       <a href="/" class="site-title">{{ site.title }}</a>
-      {# <nav class="site-nav">
-        <a href="/">Home</a>
-      </nav> #}
+      <nav class="site-nav">
+        {%- for entry in nav %}
+        <a href="{{ entry.url }}"{% if entry.url == page.url or entry.url + '/' == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a>
+        {%- endfor %}
+      </nav>
     </div>
   </header>
 

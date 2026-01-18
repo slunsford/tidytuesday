@@ -1,0 +1,25 @@
+.page {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--space-xl) var(--space-lg);
+}
+
+.page__header {
+  margin-bottom: var(--space-xl);
+}
+
+.page__title {
+  margin-bottom: var(--space-sm);
+}
+
+.page__content > * + * {
+  margin-top: var(--space-md);
+}
+
+.page__content h2 {
+  margin-top: var(--space-xl);
+}
+
+.page__content h3 {
+  margin-top: var(--space-lg);
+}
