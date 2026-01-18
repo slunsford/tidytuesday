@@ -31,8 +31,8 @@ export default function(eleventyConfig) {
   // Shortcodes
   eleventyConfig.addShortcode("currentYear", () => `${new Date().getFullYear()}`);
 
-  // Passthrough copy for assets
-  eleventyConfig.addPassthroughCopy("src/assets");
+  // Passthrough copy for CSS
+  eleventyConfig.addPassthroughCopy("src/css");
 
   return {
     dir: {
