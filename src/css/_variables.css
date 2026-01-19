@@ -2,7 +2,7 @@
   color-scheme: light dark;
 
   --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  --font-mono: "MonoLisa", ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, monospace;
+  --font-mono: ml, ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, monospace;
   --mono-font-features: "ss02", "liga", "calt", "onum", "ss11", "ss13";
 
   --color-text: light-dark(#1a1a1a, #e5e5e5);
