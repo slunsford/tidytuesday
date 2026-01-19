@@ -1,11 +1,18 @@
 import { DateTime } from "luxon";
 import yaml from "js-yaml";
 import uncharted from "eleventy-plugin-uncharted";
+import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
 
 export default function(eleventyConfig) {
   // Uncharted plugin for charts
   eleventyConfig.addPlugin(uncharted, {
-    animate: true
+    animate: true,
+    dataDir: 'src/_data'
+  });
+
+  // Syntax highlighting for code blocks
+  eleventyConfig.addPlugin(syntaxHighlight, {
+    preAttributes: { tabindex: 0 }
   });
 
   // YAML data file support

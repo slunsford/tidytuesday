@@ -2,6 +2,7 @@
 @import "_variables.css";
 @import "_monolisa.css";
 @import "_base.css";
+@import "_syntax_highlighting.css";
 @import "_header.css";
 @import "_footer.css";
 @import "_post.css";

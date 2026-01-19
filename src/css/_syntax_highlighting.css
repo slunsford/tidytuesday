@@ -1,0 +1,154 @@
+/**
+ * MIT License
+ * Copyright (c) 2018 Sarah Drasner
+ * Sarah Drasner's[@sdras] Night Owl
+ * Ported by Sara vieria [@SaraVieira]
+ * Added by Souvik Mandal [@SimpleIndian]
+ * Colors updated by Sean Lunsford
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+pre[class*="language-"]::-moz-selection,
+pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection,
+code[class*="language-"] ::-moz-selection {
+  text-shadow: none;
+  background: rgba(34, 36, 47, 0.99);
+}
+
+pre[class*="language-"]::selection,
+pre[class*="language-"] ::selection,
+code[class*="language-"]::selection,
+code[class*="language-"] ::selection {
+  text-shadow: none;
+  background: rgba(34, 36, 47, 0.99);
+}
+
+
+@media print {
+  code[class*="language-"],
+  pre[class*="language-"] {
+    text-shadow: none;
+  }
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  overflow: auto;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+  color: #dfe1e2;
+}
+
+:not(pre) > code[class*="language-"] {
+  padding: 0.1em;
+  border-radius: 0.3em;
+  white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.cdata {
+  color: #5c7a7a;
+  font-style: italic;
+}
+
+.token.punctuation {
+  color: #9582c4;
+}
+
+.namespace {
+  color: #a8b8c2;
+}
+
+.token.deleted {
+  color: rgba(255, 69, 0, 0.56);
+  font-style: italic;
+}
+
+.token.symbol,
+.token.property {
+  color: #9cb5b0;
+}
+
+.token.tag,
+.token.operator,
+.token.keyword {
+  color: #ff6b35;
+}
+
+.token.boolean {
+  color: #ff5a74;
+}
+
+.token.number {
+  color: #ff8c6c;
+}
+
+.token.constant,
+.token.function,
+.token.builtin,
+.token.char {
+  color: #8bb4ff;
+}
+
+.token.selector,
+.token.doctype {
+  color: #b8a9c9;
+  font-style: italic;
+}
+
+.token.attr-name,
+.token.inserted {
+  color: #a8c967;
+  font-style: italic;
+}
+
+.token.string,
+.token.url,
+.token.entity,
+.language-css .token.string,
+.style .token.string {
+  color: #a8c967;
+}
+
+.token.class-name,
+.token.atrule,
+.token.attr-value {
+  color: #ffcb8b;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+  color: #d6deeb;
+}
+
+.token.important,
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}

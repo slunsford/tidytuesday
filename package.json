@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@11ty/eleventy": "^3.0.0",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.2",
     "eleventy-plugin-uncharted": "^0.1.1",
     "js-yaml": "^4.1.0",
     "luxon": "^3.5.0"
