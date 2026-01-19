@@ -2,8 +2,8 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "redirects": [
     {
-      "source": "/2025-:path*",
-      "destination": "https://tidytuesday2025.seanlunsford.com/2025-:path*",
+      "source": "/(2025-.*)",
+      "destination": "https://tidytuesday2025.seanlunsford.com/$1",
       "permanent": true
     }
   ]
