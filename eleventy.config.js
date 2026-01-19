@@ -15,6 +15,11 @@ export default function(eleventyConfig) {
     preAttributes: { tabindex: 0 }
   });
 
+  // Smart typography (curly quotes, em dashes, etc.)
+  eleventyConfig.amendLibrary("md", mdLib => {
+    mdLib.set({ typographer: true });
+  });
+
   // YAML data file support
   eleventyConfig.addDataExtension("yml, yaml", contents => yaml.load(contents));
 
