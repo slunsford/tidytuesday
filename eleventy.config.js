@@ -20,7 +20,7 @@ export default function(eleventyConfig) {
 
   // Date filters
   eleventyConfig.addFilter("readableDate", (dateObj) => {
-    return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("LLLL d, yyyy");
+    return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("d LLLL yyyy");
   });
 
   eleventyConfig.addFilter("htmlDateString", (dateObj) => {
