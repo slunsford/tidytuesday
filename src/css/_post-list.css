@@ -1,3 +1,13 @@
+.post-list__year {
+  margin-top: var(--space-lg);
+  margin-bottom: var(--space-sm);
+  font-size: 1.25rem;
+}
+
+.post-list__year:first-of-type {
+  margin-top: 0;
+}
+
 .post-list {
   list-style: none;
   padding: 0;

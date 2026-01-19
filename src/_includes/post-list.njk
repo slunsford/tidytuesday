@@ -1,5 +1,12 @@
+{%- set reversedPosts = posts | reverse -%}
+{%- for post in reversedPosts -%}
+{%- set postYear = post.date | year -%}
+{%- set prevYear = reversedPosts[loop.index0 - 1].date | year if loop.index0 > 0 else null -%}
+{%- if postYear != prevYear -%}
+{%- if not loop.first %}</ul>{% endif %}
+<h3 class="post-list__year">{{ postYear }}</h3>
 <ul class="post-list">
-  {%- for post in posts | reverse -%}
+{%- endif -%}
   <li class="post-list__item">
     <a href="{{ post.url }}" class="post-list__link">
       <span class="post-list__week">Week {{ post.data.week }}</span>
@@ -7,5 +14,5 @@
       <time class="post-list__date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
     </a>
   </li>
-  {%- endfor -%}
-</ul>
+{%- if loop.last -%}</ul>{%- endif -%}
+{%- endfor -%}

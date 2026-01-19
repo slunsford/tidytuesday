@@ -4,12 +4,10 @@ title: Home
 ---
 <div class="home">
   <section class="home__intro">
-    <h1>{{ site.title }}</h1>
     <p>{{ site.description }}</p>
   </section>
 
   <section class="home__posts">
-    <h2>Posts</h2>
     {% set posts = collections.posts %}
     {% include "post-list.njk" %}
   </section>
@@ -19,11 +17,11 @@ title: Home
 .home {
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: var(--space-xl) var(--space-lg);
+  padding: var(--space-md) var(--space-lg);
 }
 
 .home__intro {
-  margin-bottom: var(--space-xl);
+  margin-bottom: var(--space-md);
 }
 
 .home__intro h1 {
