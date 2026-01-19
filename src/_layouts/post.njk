@@ -10,7 +10,7 @@ layout: base.njk
     <h1 class="post__title">{{ title }}</h1>
     {% if not hide_tidytuesday_link %}
     <p class="post__source">
-      <a href="{{ site.tidytuesday_base }}/{{ date | year }}/{{ date | htmlDateString }}">View data on TidyTuesday</a>
+      <a href="{{ site.tidytuesday_base }}/{{ date | year }}/{{ date | htmlDateString }}/readme.md">View data on TidyTuesday</a>
     </p>
     {% endif %}
   </header>
