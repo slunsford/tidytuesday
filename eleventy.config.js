@@ -2,6 +2,7 @@ import { DateTime } from "luxon";
 import yaml from "js-yaml";
 import uncharted from "eleventy-plugin-uncharted";
 import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
+import pluginRss from "@11ty/eleventy-plugin-rss";
 
 export default function(eleventyConfig) {
   // Uncharted plugin for charts
@@ -14,6 +15,9 @@ export default function(eleventyConfig) {
   eleventyConfig.addPlugin(syntaxHighlight, {
     preAttributes: { tabindex: 0 }
   });
+
+  // RSS feed
+  eleventyConfig.addPlugin(pluginRss);
 
   // Smart typography (curly quotes, em dashes, etc.)
   eleventyConfig.amendLibrary("md", mdLib => {

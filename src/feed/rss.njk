@@ -1,0 +1,25 @@
+---
+permalink: /feed.xml
+---
+{%- set latestPost = collections.posts | reverse | first -%}
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>{{ site.title }}</title>
+  <subtitle>{{ site.description }}</subtitle>
+  <link href="{{ site.url }}/feed.xml" rel="self"/>
+  <link href="{{ site.url }}/"/>
+  <updated>{{ (latestPost.data.published or latestPost.date) | dateToRfc3339 }}</updated>
+  <id>{{ site.url }}/</id>
+  <author>
+    <name>{{ site.author }}</name>
+  </author>
+  {%- for post in collections.posts | reverse %}
+  <entry>
+    <title>{{ post.data.title }}</title>
+    <link href="{{ post.url | htmlBaseUrl(site.url) }}"/>
+    <updated>{{ (post.data.published or post.date) | dateToRfc3339 }}</updated>
+    <id>{{ post.url | htmlBaseUrl(site.url) }}</id>
+    <content type="html">{{ post.content | transformWithHtmlBase(post.url, site.url) }}</content>
+  </entry>
+  {%- endfor %}
+</feed>
