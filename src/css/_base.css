@@ -57,10 +57,10 @@ pre {
 pre {
   margin: var(--space-md) 0;
   padding: var(--space-md);
-  background: var(--dark-background-color);
-  border: 1px solid var(--post-border-color);
+  background: #1e1e1e;
+  border: 1px solid #333;
   border-radius: 5px;
-  color: var(--light-text-color);
+  color: #dfe1e2;
 }
 
 pre code {

@@ -13,10 +13,6 @@
   --color-accent: light-dark(#0066cc, #66b3ff);
   --color-accent-hover: light-dark(#0052a3, #99ccff);
 
-  --dark-background-color: #060316;
-  --light-text-color: #dfe1e2;
-  --post-border-color: light-dark(#e5e7e9, #22242f);
-
   --space-xs: 0.25rem;
   --space-sm: 0.5rem;
   --space-md: 1rem;
