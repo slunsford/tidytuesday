@@ -6,6 +6,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 - `npm start` - Run dev server with hot reload
 - `npm run build` - Build static site to `_site/`
+- `npm run clean` - Empty `_site/` directory
 
 ## Architecture
 
