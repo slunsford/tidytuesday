@@ -1,7 +1,7 @@
 {
-  "name": "tidytuesday-2026",
+  "name": "tidytuesday",
   "version": "1.0.0",
-  "description": "TidyTuesday 2026 data visualizations",
+  "description": "TidyTuesday data visualizations",
   "type": "module",
   "scripts": {
     "start": "eleventy --serve",
