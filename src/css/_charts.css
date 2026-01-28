@@ -1,3 +1,21 @@
+.chart {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  padding: var(--space-lg);
+}
+
+.chart:not(.chart-donut) {
+  width: min(var(--chart-width), 100vw - var(--space-lg) * 2);
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.chart-sankey:not(.chart-donut) {
+  width: min(70rem, 100vw - var(--space-lg) * 2);
+}
+
 .chart-title {
   font-size: 1.25rem;
 }
