@@ -1,0 +1,22 @@
+source,target,companies
+Brazil,Micro enterprise,66202
+Micro enterprise,LLC,51699
+Brazil,Other,42520
+Other,LLC,36241
+Brazil,Small enterprise,32610
+Small enterprise,LLC,31531
+Micro enterprise,Sole Proprietorship,14162
+Other,Partnership,2939
+Other,Privately Held Corporation,2892
+Small enterprise,Sole Proprietorship,920
+Other,Other Type,175
+Micro enterprise,Partnership,172
+Micro enterprise,Other Type,166
+Small enterprise,Partnership,150
+Other,Sole Proprietorship,127
+Other,Cooperative,79
+Other,Publicly Traded Corporation,52
+Other,State-Owned Enterprise,15
+Small enterprise,Other Type,7
+Micro enterprise,Privately Held Corporation,3
+Small enterprise,Privately Held Corporation,2
