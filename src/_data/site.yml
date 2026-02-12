@@ -4,6 +4,7 @@ description: Weekly(-ish) adventures in data visualization
 author:
   name: Sean Lunsford
   mastodon_url: https://mastodon.seanlunsford.com/@sean
+  mastodon_handle: "@sean@seanlunsford.com"
   bluesky_url: https://bsky.app/profile/seanlunsford.com
 repo: https://github.com/slunsford/tidytuesday
 tidytuesday_base: https://github.com/rfordatascience/tidytuesday/blob/main/data
