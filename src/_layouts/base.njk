@@ -8,6 +8,8 @@
   <link rel="alternate" href="/feed.xml" type="application/atom+xml" title="{{ site.title }}">
   <link rel="alternate" href="/feed.json" type="application/json" title="{{ site.title }}">
   <link rel="stylesheet" href="/css/style.css">
+  {% if site.author.mastodon_url %}<link rel="me" href="{{ site.author.mastodon_url }}">{% endif %}
+  {% if site.author.bluesky_url %}<link rel="me" href="{{ site.author.bluesky_url }}">{% endif %}
   <script src="https://tinylytics.app/embed/Sdms2fWaFDoZZJx1ZuTe.js" defer></script>
 </head>
 <body>
@@ -28,7 +30,7 @@
 
   <footer class="site-footer">
     <p>
-      &copy; {% currentYear %} {{ site.author }} ·
+      &copy; {% currentYear %} {{ site.author.name }} ·
       <a href="{{ site.repo }}">GitHub</a> ·
       <a href="https://github.com/rfordatascience/tidytuesday">TidyTuesday</a>
     </p>
