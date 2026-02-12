@@ -8,7 +8,6 @@ export default function(eleventyConfig) {
   // Uncharted plugin for charts
   eleventyConfig.addPlugin(uncharted, {
     animate: true,
-    dataDir: 'src/_data',
     downloadData: true,
     dataPassthrough: true
   });
