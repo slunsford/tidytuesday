@@ -7,6 +7,7 @@ import pluginRss from "@11ty/eleventy-plugin-rss";
 export default function(eleventyConfig) {
   // Uncharted plugin for charts
   eleventyConfig.addPlugin(uncharted, {
+    dataDir: 'src/_data/charts',
     animate: true,
     downloadData: true,
     dataPassthrough: true
