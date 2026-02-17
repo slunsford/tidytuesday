@@ -5,12 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{% if title %}{{ title }} | {% endif %}{{ site.title }}</title>
   <meta name="description" content="{{ description or site.description }}">
-  {% if site.author.mastodon_handle %}<meta name="fediverse:creator" content="{{ site.author.mastodon_handle }}">{% endif %}
+
   <link rel="alternate" href="/feed.xml" type="application/atom+xml" title="{{ site.title }}">
   <link rel="alternate" href="/feed.json" type="application/json" title="{{ site.title }}">
-  <link rel="stylesheet" href="/css/style.css">
+
+  {% if site.author.mastodon_handle %}<meta name="fediverse:creator" content="{{ site.author.mastodon_handle }}">{% endif %}
   {% if site.author.mastodon_url %}<link rel="me" href="{{ site.author.mastodon_url }}">{% endif %}
   {% if site.author.bluesky_url %}<link rel="me" href="{{ site.author.bluesky_url }}">{% endif %}
+
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="https://kit.fontawesome.com/32d5416a89.css" crossorigin="anonymous">
+
   <script src="https://tinylytics.app/embed/Sdms2fWaFDoZZJx1ZuTe.js" defer></script>
 </head>
 <body>

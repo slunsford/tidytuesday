@@ -68,3 +68,15 @@ pre code {
   background: none;
   border: none;
 }
+
+blockquote {
+  margin: var(--space-md) 0;
+  padding: var(--space-sm) var(--space-md);
+  border-left: 3px solid var(--color-accent);
+  background-color: var(--color-surface);
+  border-radius: 0 var(--border-radius) var(--border-radius) 0;
+}
+
+blockquote p {
+  margin: 0;
+}
