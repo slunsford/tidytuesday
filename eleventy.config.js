@@ -10,7 +10,20 @@ export default function(eleventyConfig) {
     dataDir: 'src/_data/charts',
     animate: true,
     downloadData: true,
-    dataPassthrough: true
+    dataPassthrough: true,
+    image: {
+      enabled: true,
+      outputDir: '/images/charts/',
+      width: 800,
+      height: 500,
+      scale: 2,
+      background: '#ffffff',
+      stylesheets: [
+        'node_modules/@fortawesome/fontawesome-pro/css/fontawesome.min.css',
+        'node_modules/@fortawesome/fontawesome-pro/css/solid.min.css',
+        'src/css/_charts.css'
+      ]
+    }
   });
 
   // Syntax highlighting for code blocks
