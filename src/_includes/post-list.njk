@@ -11,7 +11,7 @@
     <a href="{{ post.url }}" class="post-list__link">
       <span class="post-list__week">Week {{ post.data.week }}</span>
       <span class="post-list__title">{{ post.data.title }}</span>
-      <time class="post-list__date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+      <time class="post-list__date" datetime="{{ post.date | htmlDateString }}">{{ post.date | shortDate }}</time>
     </a>
   </li>
 {%- if loop.last -%}</ul>{%- endif -%}
