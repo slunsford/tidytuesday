@@ -17,7 +17,7 @@ export default function(eleventyConfig) {
       width: 800,
       height: 500,
       scale: 2,
-      background: '#ffffff',
+      background: '#f5f5f5',
       stylesheets: [
         'node_modules/@fortawesome/fontawesome-pro/css/fontawesome.min.css',
         'node_modules/@fortawesome/fontawesome-pro/css/solid.min.css',
