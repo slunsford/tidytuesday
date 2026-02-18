@@ -6,6 +6,20 @@
   <title>{% if title %}{{ title }} | {% endif %}{{ site.title }}</title>
   <meta name="description" content="{{ description or site.description }}">
 
+  <!-- OpenGraph -->
+  <meta property="og:title" content="{{ title or site.title }}">
+  <meta property="og:description" content="{{ description or site.description }}">
+  <meta property="og:url" content="{{ page.url | htmlBaseUrl(site.url) }}">
+  <meta property="og:site_name" content="{{ site.title }}">
+  <meta property="og:type" content="{% if layout == 'post.njk' %}article{% else %}website{% endif %}">
+  {% if charts %}<meta property="og:image" content="{{ site.url }}{% chartImageUrl charts | firstChartId %}">{% endif %}
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="{% if charts %}summary_large_image{% else %}summary{% endif %}">
+  <meta name="twitter:title" content="{{ title or site.title }}">
+  <meta name="twitter:description" content="{{ description or site.description }}">
+  {% if charts %}<meta name="twitter:image" content="{{ site.url }}{% chartImageUrl charts | firstChartId %}">{% endif %}
+
   <link rel="alternate" href="/feed.xml" type="application/atom+xml" title="{{ site.title }}">
   <link rel="alternate" href="/feed.json" type="application/json" title="{{ site.title }}">
 

@@ -63,6 +63,11 @@ export default function(eleventyConfig) {
     return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("d LLL");
   });
 
+  eleventyConfig.addFilter("firstChartId", (charts) => {
+    if (!charts) return null;
+    return Object.keys(charts)[0];
+  });
+
   // Shortcodes
   eleventyConfig.addShortcode("currentYear", () => `${new Date().getFullYear()}`);
 

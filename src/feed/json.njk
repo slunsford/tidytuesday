@@ -14,10 +14,14 @@ permalink: /feed.json
   ],
   "items": [
     {%- for post in collections.posts | reverse %}
+    {%- set firstChart = post.data.charts | firstChartId -%}
     {
       "id": "{{ post.url | htmlBaseUrl(site.url) }}",
       "url": "{{ post.url | htmlBaseUrl(site.url) }}",
       "title": "{{ post.data.title }}",
+      {%- if firstChart %}
+      "image": "{{ site.url }}{% chartImageUrl firstChart %}",
+      {%- endif %}
       "content_html": {{ post.content | transformWithHtmlBase(post.url, site.url) | chartToImage(site.url) | dump | safe }},
       "date_published": "{{ (post.data.published or post.date) | dateToRfc3339 }}"
     }{% if not loop.last %},{% endif %}
