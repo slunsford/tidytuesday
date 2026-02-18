@@ -19,7 +19,7 @@ permalink: /feed.xml
     <link href="{{ post.url | htmlBaseUrl(site.url) }}"/>
     <updated>{{ (post.data.published or post.date) | dateToRfc3339 }}</updated>
     <id>{{ post.url | htmlBaseUrl(site.url) }}</id>
-    <content type="html">{{ post.content | transformWithHtmlBase(post.url, site.url) }}</content>
+    <content type="html">{{ post.content | transformWithHtmlBase(post.url, site.url) | chartToImage(site.url) }}</content>
   </entry>
   {%- endfor %}
 </feed>
