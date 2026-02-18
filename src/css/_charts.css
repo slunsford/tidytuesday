@@ -27,3 +27,50 @@
 .chart-subtitle {
   font-size: .9rem;
 }
+
+/* Week 01 - Claude Code Adoption */
+.chart-claude-adoption {
+  .chart-series-prs { --color: #858585; }
+  .chart-series-commits { --color: #d65300; }
+}
+
+/* Week 03 - Astronomy Picture of the Day (APOD) Archive */
+.chart-planets,
+.chart-planets-by-year {
+  --chart-color-1: #7a8b99; /* Mercury */
+  --chart-color-2: #e8879f; /* Venus */
+  --chart-color-3: #2563a8; /* Earth */
+  --chart-color-4: #c94a35; /* Mars */
+  --chart-color-5: #e07b28; /* Jupiter */
+  --chart-color-6: #f5dc7a; /* Saturn */
+  --chart-color-7: #7ec8e8; /* Uranus */
+  --chart-color-8: #2a9d8f; /* Neptune */
+}
+
+.chart-planets-by-year {
+  --chart-height: 25rem;
+}
+
+/* Week 05 - Edible Plants Database */
+.chart-energy {
+  .chart-series-very-high { --color: var(--chart-color-red); }
+  .chart-series-high { --color: var(--chart-color-orange); }
+  .chart-series-medium { --color: var(--chart-color-yellow); }
+  .chart-series-low { --color: var(--chart-color-green); }
+  .chart-series-very-low { --color: var(--chart-color-blue); }
+}
+
+/* Week 06 - 2026 Winter Olympics */
+.chart-olympics {
+  .chart-series-medal-events { --color: var(--chart-color-yellow); }
+  .chart-series-non-medal-events { --color: var(--chart-color-blue); }
+  .chart-series-training-events { --color: var(--chart-color-orange); }
+}
+
+/* Week 07 - Agricultural Production Statistics in New Zealand */
+.chart-nz-livestock {
+  .chart-series-cattle { --color: var(--chart-color-gray); }
+  .chart-series-sheep { --color: var(--chart-color-yellow); }
+  .chart-series-pigs { --color: var(--chart-color-pink); }
+  .chart-series-poultry { --color: var(--chart-color-orange); }
+}
