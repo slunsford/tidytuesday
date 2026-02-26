@@ -34,6 +34,9 @@ jobs:
           git diff --staged --quiet || git commit -m "Update cached chart images [skip ci]"
           git push
 
+      - name: Install Vercel CLI
+        run: npm install -g vercel
+
       - name: Deploy to Vercel
         run: |
           if [ "${{ github.ref }}" = "refs/heads/main" ]; then
