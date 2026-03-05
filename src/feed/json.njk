@@ -23,7 +23,8 @@ permalink: /feed.json
       "image": "{{ site.url }}{% chartImageUrl firstChart %}",
       {%- endif %}
       "content_html": {{ post.content | transformWithHtmlBase(post.url, site.url) | chartToImage(site.url) | dump | safe }},
-      "date_published": "{{ (post.data.published or post.date) | dateToRfc3339 }}"
+      "date_published": "{{ (post.data.published or post.date) | dateToRfc3339 }}"{% if post.data.updated %},
+      "date_modified": "{{ post.data.updated }}"{% endif %}
     }{% if not loop.last %},{% endif %}
     {%- endfor %}
   ]

@@ -8,7 +8,7 @@ permalink: /feed.xml
   <subtitle>{{ site.description }}</subtitle>
   <link href="{{ site.url }}/feed.xml" rel="self"/>
   <link href="{{ site.url }}/"/>
-  <updated>{{ (latestPost.data.published or latestPost.date) | dateToRfc3339 }}</updated>
+  <updated>{% if latestPost.data.updated %}{{ latestPost.data.updated }}{% else %}{{ (latestPost.data.published or latestPost.date) | dateToRfc3339 }}{% endif %}</updated>
   <id>{{ site.url }}/</id>
   <author>
     <name>{{ site.author }}</name>
@@ -17,7 +17,8 @@ permalink: /feed.xml
   <entry>
     <title>{{ post.data.title }}</title>
     <link href="{{ post.url | htmlBaseUrl(site.url) }}"/>
-    <updated>{{ (post.data.published or post.date) | dateToRfc3339 }}</updated>
+    <published>{{ (post.data.published or post.date) | dateToRfc3339 }}</published>
+    <updated>{% if post.data.updated %}{{ post.data.updated }}{% else %}{{ (post.data.published or post.date) | dateToRfc3339 }}{% endif %}</updated>
     <id>{{ post.url | htmlBaseUrl(site.url) }}</id>
     <content type="html">{{ post.content | transformWithHtmlBase(post.url, site.url) | chartToImage(site.url) }}</content>
   </entry>
