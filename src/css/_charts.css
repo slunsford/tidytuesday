@@ -74,3 +74,11 @@
   .chart-series-pigs { --color: var(--chart-color-pink); }
   .chart-series-poultry { --color: var(--chart-color-orange); }
 }
+
+/* Week 09 - Golem Grad Tortoise Data */
+.chart-tortoise-recaptures-plateau,
+.chart-tortoise-recaptures-konjsko,
+.chart-tortoise-recaptures-beach {
+  .chart-series-male { --color: var(--chart-color-blue); }
+  .chart-series-female { --color: var(--chart-color-pink); }
+}
