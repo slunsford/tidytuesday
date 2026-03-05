@@ -29,7 +29,7 @@ Generate accessible alt text for a chart in a TidyTuesday post and save it to th
        alt: "Generated alt text here"
    ```
 
-5. Also copy the alt text to the clipboard using `pbcopy`
+5. Copy the alt text to the clipboard using `pbcopy`. For multiple charts, copy each one separately in series (not all at once) so clipboard managers can capture each entry.
 
 6. Display the alt text to the user and confirm it was saved and copied
 
