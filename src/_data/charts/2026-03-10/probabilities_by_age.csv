@@ -1,0 +1,20 @@
+term,75+,Under 18
+Almost No Chance,5.0,4.0
+Remote Chance,5.0,10.0
+Highly Unlikely,6.0,10.0
+Improbable,10.0,10.0
+Little Chance,10.0,15.0
+Chances are Slight,10.0,19.0
+Unlikely,12.0,20.0
+Might Happen,40.0,40.0
+Could Happen,40.0,46.0
+May Happen,40.0,50.0
+About Even,50.0,50.0
+Better than Even,60.0,60.0
+Realistic Possibility,60.0,70.0
+Probable,75.0,70.0
+Likely,75.0,75.0
+Very Good Chance,80.0,88.0
+Highly Likely,87.0,90.0
+Almost Certain,95.0,97.0
+Will Happen,100.0,100.0

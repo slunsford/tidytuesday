@@ -82,3 +82,15 @@
   .chart-series-male { --color: var(--chart-color-blue); }
   .chart-series-female { --color: var(--chart-color-pink); }
 }
+
+/* Week 10 - How Likely is 'Likely'? */
+
+.chart-probabilities-by-age {
+  --chart-dot-size: 0.75rem;
+  .chart-series-75 { --color: var(--chart-color-orange); }
+  .chart-series-under-18 { --color: var(--chart-color-cyan); }
+}
+
+.chart-will-happen-histogram {
+  .chart-series-will-happen { --color: var(--chart-color-green); }
+}
