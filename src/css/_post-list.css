@@ -42,6 +42,8 @@
   background-color: var(--color-surface);
   padding: var(--space-xs) var(--space-sm);
   border-radius: var(--border-radius);
+  min-width: 5rem;
+  text-align: center;
   font-size: 0.875rem;
   font-weight: 500;
   white-space: nowrap;
