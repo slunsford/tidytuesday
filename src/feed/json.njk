@@ -7,11 +7,7 @@ permalink: /feed.json
   "home_page_url": "{{ site.url }}/",
   "feed_url": "{{ site.url }}/feed.json",
   "description": "{{ site.description }}",
-  "authors": [
-    {
-      "name": "{{ site.author }}"
-    }
-  ],
+  "authors": [{ "name": "{{ site.author.name }}" }],
   "items": [
     {%- for post in collections.posts | reverse %}
     {%- set firstChart = post.data.charts | firstChartId -%}
