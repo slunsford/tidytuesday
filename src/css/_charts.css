@@ -94,3 +94,7 @@
 .chart-will-happen-histogram {
   .chart-series-will-happen { --color: var(--chart-color-green); }
 }
+
+.chart-pi-100-digits {
+  --chart-bubble-size-min: 0.75rem;
+}
